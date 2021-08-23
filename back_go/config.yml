@@ -1,0 +1,18 @@
+http:
+  url: ":8080"
+  readBufferSize: 65536
+  maxRequestBodySize: 131072
+  reduceMemoryUsage: false
+  readTimeout: 29000
+  writeTimeout: 29000
+  debug: true
+  profiling: false
+
+database:
+  connectionString: "postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable"
+  enableMigration: true
+  migrationsPath: "migrations"
+  connectionMaxLifetimeMs: 540000
+  maxIdleConnections: 10
+  maxOpenConnections: 50
+  debug: false
